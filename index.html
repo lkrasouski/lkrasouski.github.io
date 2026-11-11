@@ -12,9 +12,9 @@
 <meta property="og:url" content="https://lkrasouski.github.io/">
 <meta property="og:image" content="https://lkrasouski.github.io/leu.jpg">
 <meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#F4EEDF" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#16120E" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F4EEDF'/%3E%3Ccircle cx='16' cy='32' r='8' fill='%23557A4E'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23A86A2B'/%3E%3Ccircle cx='48' cy='32' r='8' fill='%234C6B8A'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#F0EEE9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151514" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F0EEE9'/%3E%3Ccircle cx='16' cy='32' r='8' fill='%2356724F'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%238A6A40'/%3E%3Ccircle cx='48' cy='32' r='8' fill='%2356708C'/%3E%3C/svg%3E">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Leu Krasouski", "jobTitle": "Senior Mobile Engineer", "url": "https://lkrasouski.github.io/", "image": "https://lkrasouski.github.io/leu.jpg", "email": "mailto:krasouski.work@gmail.com", "telephone": "+48571365176", "address": {"@type": "PostalAddress", "addressLocality": "Warsaw", "addressCountry": "PL"}, "knowsAbout": ["Android", "iOS", "Kotlin", "Swift", "Kotlin Multiplatform", "Jetpack Compose", "SwiftUI", "AI-assisted development"], "sameAs": ["https://www.linkedin.com/in/leukr/", "https://github.com/lkrasouski"]}</script>
 <style>
 :root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -27,20 +27,20 @@ img{max-width:100%}
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: slim sticky nav; hero = statement | live "commonMain → androidApp + iosApp" diagram;
-   then one 1120px column of ruled sections. Palette taken from the portrait and the LinkedIn banner:
-   plaster cream, white cotton, espresso ink, banner brown. Platform hues are muted: sage Android, slate-blue iOS, caramel shared core. */
+   then one 1120px column of ruled sections. Palette built on Pantone 11-4201 Cloud Dancer (#F0EEE9),
+   paired the way Pantone suggests: soft black ink, warm taupe accent, muted sage, soft slate blue. Platform hues: sage Android, slate iOS, taupe-brass shared core. */
 :root{
-  --bg:#F4EEDF;
-  --surface:#FFFCF4;
-  --ink:#2B241C;
-  --muted:#73685A;
-  --line:#DFD5C1;
-  --brand:#5B3F22;
-  --android:#557A4E;
-  --ios:#4C6B8A;
-  --core:#A86A2B;
-  --core-soft:#F0E0C6;
-  --shade:#2B241C;
+  --bg:#F0EEE9;
+  --surface:#F8F7F3;
+  --ink:#1F1E1C;
+  --muted:#6B6964;
+  --line:#DAD7CF;
+  --brand:#74644F;
+  --android:#56724F;
+  --ios:#56708C;
+  --core:#8A6A40;
+  --core-soft:#E7E0D3;
+  --shade:#1F1E1C;
   --display:"Geist","Helvetica Neue","Segoe UI",system-ui,sans-serif;
   --body:"Geist","Helvetica Neue","Segoe UI",system-ui,sans-serif;
   --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
@@ -48,14 +48,14 @@ img{max-width:100%}
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#16120E; --surface:#201A14; --ink:#F2EADC; --muted:#B2A492; --line:#382E24; --brand:#D9B78E;
-    --android:#8FBF86; --ios:#94B3D4; --core:#E0A15C; --core-soft:#3B2B1A; --shade:#000000;
+    --bg:#151514; --surface:#1E1E1C; --ink:#F0EEE9; --muted:#A5A29B; --line:#32312E; --brand:#CBBBA6;
+    --android:#A1BA9A; --ios:#A2B5CB; --core:#C9A877; --core-soft:#2D2922; --shade:#000000;
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#16120E; --surface:#201A14; --ink:#F2EADC; --muted:#B2A492; --line:#382E24; --brand:#D9B78E;
-  --android:#8FBF86; --ios:#94B3D4; --core:#E0A15C; --core-soft:#3B2B1A; --shade:#000000;
+  --bg:#151514; --surface:#1E1E1C; --ink:#F0EEE9; --muted:#A5A29B; --line:#32312E; --brand:#CBBBA6;
+  --android:#A1BA9A; --ios:#A2B5CB; --core:#C9A877; --core-soft:#2D2922; --shade:#000000;
   color-scheme:dark;
 }
 
@@ -119,7 +119,7 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
 .cta{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .btn{font:500 15px/1 var(--body);display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;cursor:pointer;transition:transform .2s ease,border-color .2s ease}
 .btn:hover{transform:translateY(-2px);border-color:var(--ink)}
-.btn.primary{background:var(--brand);color:var(--bg);border-color:var(--brand)}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .btn .mono{font-size:13px}
 .btn .ok{color:var(--android);font-size:13px;font-weight:500}
 
